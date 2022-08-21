@@ -16,7 +16,7 @@
 
     <main>
         <section class="mt-12">
-            <div class="grid grid-cols-4 gap-4 w-9/12 mx-auto">
+            <div class="grid grid-cols-4 gap-6 w-5/6 mx-auto">
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/1.png" alt="messi" class="rounded-xl" />
@@ -26,7 +26,7 @@
                         <p>Kit Number: #30</p>
                         <p>Nationality: ArgentinaArgentina</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer(this)">Select</button>
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                         <p>Kit Number: #09</p>
                         <p>Nationality: Poland</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                         <p>Kit Number: #07</p>
                         <p>Nationality: Poland</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
                         </div>
                     </div>
                 </div>
@@ -60,6 +60,24 @@
 
                 <div class="  text-center  card w-full bg-base-100 shadow-xl bg-gray-600">
                     <h2 class="text-4xl font-semibold mt-12 text-white "> Selected Player</h2>
+                    <div class="overflow-x-auto">
+                        <table class="table w-9/12 mt-12 mx-4">
+                            <!-- head -->
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Name</th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+
                 </div>
 
 
@@ -72,7 +90,7 @@
                         <p>Kit Number: #13</p>
                         <p>Nationality: Slovenia</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
                         </div>
                     </div>
                 </div>
@@ -86,7 +104,7 @@
                         <p>Kit Number: #17</p>
                         <p>Nationality: Belgium</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
                         </div>
                     </div>
                 </div>
@@ -100,7 +118,7 @@
                         <p>Kit Number: #17</p>
                         <p>Nationality:Portugal</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
                         </div>
                     </div>
                 </div>
@@ -139,7 +157,7 @@
                         <p>Kit Number: #10</p>
                         <p>Nationality:Brazil</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
                         </div>
                     </div>
                 </div>
@@ -153,7 +171,7 @@
                         <p>Kit Number: #01</p>
                         <p>Nationality:Germany</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
                         </div>
                     </div>
                 </div>
@@ -166,7 +184,7 @@
                         <p>Kit Number: #10</p>
                         <p>Nationality:England</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
                         </div>
                     </div>
                 </div>

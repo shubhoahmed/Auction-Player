@@ -1,1 +1,3 @@
-console.log('main js working')
+function addFavouritePlayer(element) {
+    console.log(element.parentNode);
+};

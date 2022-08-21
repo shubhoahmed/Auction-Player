@@ -15,7 +15,7 @@
 <body>
 
     <main>
-        <section>
+        <section class="mt-12">
             <div class="grid grid-cols-4 gap-4 w-9/12 mx-auto">
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
@@ -58,7 +58,10 @@
                 </div>
 
 
-                <div class=" text-4xl text-center mt-4">Player Info</div>
+                <div class="  text-center  card w-full bg-base-100 shadow-xl bg-gray-600">
+                    <h2 class="text-4xl font-semibold mt-12 text-white "> Selected Player</h2>
+                </div>
+
 
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
@@ -102,7 +105,31 @@
                     </div>
                 </div>
                 <!-- ... -->
-                <div class=" text-4xl text-center mt-4">Buget</div>
+                <div class="card w-full bg-base-100 shadow-xl bg-gray-600 text-white">
+                    <h2 class="text-4xl font-semibold mt-12  text-center bm-8">Budget</h2>
+                    <span class="px-4 mt-12">
+                        <span class="px-4 text-1xl font-bold">Per Player</span> <input
+                            class="w-36 p-2 text-black font-semibold" type="text">
+                    </span>
+                    <button class="btn btn-accent mt-8 mx-6 font-bold">Calculate</button>
+
+                    <span class="px-4 mt-6">
+                        <span class="px-4 text-1xl font-bold">Player Expenses </span> <Span
+                            class="px-4 text-1xl font-bold">$00</Span>
+                    </span>
+
+                    <span class="px-4 mt-6">
+                        <span class="px-4 text-1xl font-bold">Manager </span> <input
+                            class="w-36 p-2 text-black font-semibold" type="text">
+                    </span>
+
+                    <span class="px-4 mt-6">
+                        <span class="px-7 text-1xl font-bold">Coach </span> <input
+                            class="w-36 p-2 text-black font-semibold" type="text">
+                    </span>
+
+                    <button class="btn btn-accent mt-8 mx-6 font-bold">Calculate Total</button>
+                </div>
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/7.png" alt="messi" class="rounded-xl" />

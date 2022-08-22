@@ -39,7 +39,7 @@
                         <p>Kit Number: #09</p>
                         <p>Nationality: Poland</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer(this)">Select</button>
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                         <p>Kit Number: #07</p>
                         <p>Nationality: Poland</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer(this)">Select</button>
                         </div>
                     </div>
                 </div>
@@ -61,17 +61,17 @@
                 <div class="  text-center  card w-full bg-base-100 shadow-xl bg-gray-600">
                     <h2 class="text-4xl font-semibold mt-12 text-white "> Selected Player</h2>
                     <div class="overflow-x-auto">
-                        <table class="table w-9/12 mt-12 mx-4">
+                        <table class="table w-9/12 mt-12 mx-6">
                             <!-- head -->
                             <thead>
                                 <tr>
                                     <th></th>
-                                    <th>Name</th>
+                                    <th>Name List </th>
 
                                 </tr>
                             </thead>
 
-                            <tbody>
+                            <tbody id="player-name">
 
                             </tbody>
 
@@ -90,7 +90,7 @@
                         <p>Kit Number: #13</p>
                         <p>Nationality: Slovenia</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer(this)">Select</button>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                         <p>Kit Number: #17</p>
                         <p>Nationality: Belgium</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer(this)">Select</button>
                         </div>
                     </div>
                 </div>
@@ -118,35 +118,42 @@
                         <p>Kit Number: #17</p>
                         <p>Nationality:Portugal</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer(this)">Select</button>
                         </div>
                     </div>
                 </div>
                 <!-- ... -->
                 <div class="card w-full bg-base-100 shadow-xl bg-gray-600 text-white">
-                    <h2 class="text-4xl font-semibold mt-12  text-center bm-8">Budget</h2>
-                    <span class="px-4 mt-12">
-                        <span class="px-4 text-1xl font-bold">Per Player</span> <input
+                    <h2 class="text-4xl font-semibold mt-6  text-center bm-4">Budget</h2>
+                    <span class="px-4 mt-6">
+                        <span class="px-4 text-1xl font-bold">Per Player</span> <input id="input-field"
                             class="w-36 p-2 text-black font-semibold" type="text">
                     </span>
-                    <button class="btn btn-accent mt-8 mx-6 font-bold">Calculate</button>
+                    <button id="btn-calculate" class="btn btn-accent mt-8 mx-6 font-bold">Calculate</button>
 
                     <span class="px-4 mt-6">
                         <span class="px-4 text-1xl font-bold">Player Expenses </span> <Span
-                            class="px-4 text-1xl font-bold">$00</Span>
+                            class="px-4 text-1xl font-bold">$<span id="player-expense">00</span></Span>
+
                     </span>
 
                     <span class="px-4 mt-6">
-                        <span class="px-4 text-1xl font-bold">Manager </span> <input
+                        <span class="px-4 text-1xl font-bold">Manager </span> <input id="manager-field"
                             class="w-36 p-2 text-black font-semibold" type="text">
                     </span>
 
                     <span class="px-4 mt-6">
-                        <span class="px-7 text-1xl font-bold">Coach </span> <input
+                        <span class="px-7 text-1xl font-bold">Coach </span> <input id="coach-field"
                             class="w-36 p-2 text-black font-semibold" type="text">
                     </span>
 
-                    <button class="btn btn-accent mt-8 mx-6 font-bold">Calculate Total</button>
+                    <button id="btn-total-calculate" class="btn btn-accent mt-6 mx-6 font-bold">Calculate Total</button>
+
+                    <span class="px-4 mt-8 text-center">
+                        <span class="px-4  text-3xl font-bold">Total </span> <Span
+                            class="px-4 text-2xl font-bold">$<span class="font-bold text-2xl font-bold" id="total-cost">
+                                00</span></Span>
+                    </span>
                 </div>
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
@@ -157,7 +164,7 @@
                         <p>Kit Number: #10</p>
                         <p>Nationality:Brazil</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer(this)">Select</button>
                         </div>
                     </div>
                 </div>
@@ -171,7 +178,7 @@
                         <p>Kit Number: #01</p>
                         <p>Nationality:Germany</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer(this)">Select</button>
                         </div>
                     </div>
                 </div>
@@ -184,7 +191,7 @@
                         <p>Kit Number: #10</p>
                         <p>Nationality:England</p>
                         <div class="card-actions">
-                            <button class="btn btn-wide" onclick=" addFavouritePlayer()">Select</button>
+                            <button class="btn btn-wide" onclick=" addFavouritePlayer(this)">Select</button>
                         </div>
                     </div>
                 </div>

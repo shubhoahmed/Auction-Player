@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auction your favourite player</title>
+    <title>Elect your players from auction</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
@@ -17,8 +17,9 @@
 
         <section>
             <div class="w-full bg-neutral py-44">
-                <h1 class=" w-5/6 mx-auto italic text-8xl font-bold text-center text-amber-400 ">Auction Your
-                    Favourite Player
+                <h1 class=" w-5/6 mx-auto italic text-8xl font-bold text-center text-amber-400 ">Elect your players
+                    from
+                    auction
                 </h1>
                 <p class=" w-5/6 mx-auto text-center text-white mt-12 text-2xl"> Welcom to auction for select your
                     favourite player for 2023. You can't select more than five player.</p>
@@ -91,7 +92,7 @@
                             <thead>
                                 <tr>
                                     <th></th>
-                                    <th>Name List </th>
+                                    <th class="text-2xl capitalize">Players List </th>
                                 </tr>
                             </thead>
 
@@ -148,8 +149,8 @@
                 </div>
                 <!-- ... -->
                 <div class="card w-full bg-neutral shadow-xl bg-gray-600 text-white">
-                    <h2 class="text-4xl font-semibold mt-6  text-center bm-4">Budget</h2>
-                    <span class="px-4 mt-6">
+                    <h2 class="text-4xl font-semibold mt-6  text-center ">Budget</h2>
+                    <span class="px-4 mt-6 text-center">
                         <span class="px-4 text-1xl font-bold">Per Player</span> <input id="input-field"
                             class="w-40 p-2 text-black font-semibold" type="text">
                     </span>
@@ -162,19 +163,19 @@
 
                     </span>
 
-                    <span class="px-4 mt-6">
+                    <span class="px-4 mt-6 text-center">
                         <span class="px-2 text-1xl font-bold">Manager </span> <input id="manager-field"
                             class="w-30 p-2 text-black font-semibold" type="text">
                     </span>
 
-                    <span class="px-4 mt-6">
+                    <span class="px-4 mt-6 text-center">
                         <span class="px-5 text-1xl font-bold rounded-2xl">Coach </span> <input id="coach-field"
                             class="w-30 p-2 text-black font-semibold" type="text">
                     </span>
 
                     <button id="btn-total-calculate" class="btn btn-accent mt-6 mx-6 font-bold">Calculate Total</button>
 
-                    <span class="px-4 mt-8 text-center">
+                    <span class="px-4 mt-6 text-center">
                         <span class="px-4  text-3xl font-bold">Total </span> <Span
                             class="px-4 text-2xl font-bold text-amber-400">$<span
                                 class="font-bold text-2xl font-bold text-amber-400" id="total-cost">00</span></Span>

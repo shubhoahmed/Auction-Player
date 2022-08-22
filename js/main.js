@@ -12,7 +12,7 @@ function displayPlayersName(selectedName) {
 
     for (let i = 0; i <= 5; i++) {
 
-        const name = playersArray[i].Name;
+        const name = playersArray[i].name;
 
         const tr = document.createElement('tr');
 
@@ -25,12 +25,11 @@ function displayPlayersName(selectedName) {
     }
 }
 
-function addFavouritePlayer(element) {
-    // console.log(element.parentNode.parentNode.children[0].innerText);
-    const playerName = element.parentNode.parentNode.children[0].innerText;
 
+function addFavouritePlayer(element) {
+    const playerName = element.parentNode.parentNode.children[0].innerText;
     const playerObject = {
-        Name: playerName
+        name: playerName,
     }
 
     playersArray.push(playerObject);
@@ -65,3 +64,8 @@ document.getElementById('btn-total-calculate').addEventListener('click', functio
     finalTotal.innerText = total;
 
 })
+
+function disableBtn() {
+    document.getElementsByClassName("btn btn-wide").disabled = true;
+    // console.log('button disabled');
+}

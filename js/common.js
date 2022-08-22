@@ -17,7 +17,3 @@ function setvalueById(elementId, newValue) {
     totalCost.innerText = newValue;
     return totalCost;
 }
-
-function buttonDisable() {
-
-}

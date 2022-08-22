@@ -3,7 +3,6 @@ const playersArray = [];
 function displayPlayersName(selectedName) {
     const tableBody = document.getElementById('player-name');
 
-
     if (selectedName.length > 5) {
         alert('You cannot select more than 5 player. Please reload and select again less then 5 or equal five player for get total player expense calculation');
         return;
@@ -39,6 +38,7 @@ function addFavouritePlayer(element) {
 };
 
 document.getElementById('btn-calculate').addEventListener('click', function () {
+
     const perPlayerValue = getInputFieldValueByID('input-field');
 
     const totalExpense = perPlayerValue * playersArray.length;

@@ -3,6 +3,7 @@ const playersArray = [];
 function displayPlayersName(selectedName) {
     const tableBody = document.getElementById('player-name');
 
+
     if (selectedName.length > 5) {
         alert('You cannot select more than 5 player. Please reload and select again less then 5 or equal five player for get total player expense calculation');
         return;
@@ -65,7 +66,49 @@ document.getElementById('btn-total-calculate').addEventListener('click', functio
 
 })
 
-function disableBtn() {
-    document.getElementsByClassName("btn btn-wide").disabled = true;
-    // console.log('button disabled');
-}
+document.getElementById('btn1').addEventListener('click', function () {
+    const button1 = document.getElementById('btn1');
+    button1.disabled = true;
+
+})
+document.getElementById('btn2').addEventListener('click', function () {
+    const button2 = document.getElementById('btn2');
+    button2.disabled = true;
+
+})
+document.getElementById('btn3').addEventListener('click', function () {
+    const button3 = document.getElementById('btn3');
+    button3.disabled = true;
+
+})
+
+document.getElementById('btn4').addEventListener('click', function () {
+    const button4 = document.getElementById('btn4');
+    button4.disabled = true;
+
+})
+document.getElementById('btn5').addEventListener('click', function () {
+    const button5 = document.getElementById('btn5');
+    button5.disabled = true;
+
+})
+document.getElementById('btn6').addEventListener('click', function () {
+    const button6 = document.getElementById('btn6');
+    button6.disabled = true;
+
+})
+document.getElementById('btn7').addEventListener('click', function () {
+    const button7 = document.getElementById('btn7');
+    button7.disabled = true;
+
+})
+document.getElementById('btn8').addEventListener('click', function () {
+    const button8 = document.getElementById('btn8');
+    button8.disabled = true;
+
+})
+document.getElementById('btn9').addEventListener('click', function () {
+    const button9 = document.getElementById('btn9');
+    button9.disabled = true;
+
+})

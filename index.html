@@ -16,8 +16,8 @@
     <header>
 
         <section>
-            <div class="w-full bg-gray-600 py-56">
-                <h1 class=" w-5/6 mx-auto italic text-7xl font-bold text-center text-amber-400 ">Auction Your
+            <div class="w-full bg-neutral py-44">
+                <h1 class=" w-5/6 mx-auto italic text-8xl font-bold text-center text-amber-400 ">Auction Your
                     Favourite Player
                 </h1>
                 <p class=" w-5/6 mx-auto text-center text-white mt-12 text-2xl"> Welcom to auction for select your
@@ -41,7 +41,7 @@
     </header>
     <main>
         <section class="mt-12">
-            <div class="grid grid-cols-4 gap-6 w-5/6 mx-auto">
+            <div class="grid grid-cols-4 gap-6 grid w-5/6 mx-auto">
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/1.png" alt="messi" class="rounded-xl" />
@@ -83,7 +83,7 @@
                 </div>
 
 
-                <div class="  text-center  card w-full bg-base-100 shadow-xl bg-gray-600">
+                <div class="  text-center  card w-full bg-neutral shadow-xl bg-gray-600 ">
                     <h2 class="text-4xl font-semibold mt-12 text-white "> Selected Player</h2>
                     <div class="overflow-x-auto">
                         <table class="table w-9/12 mt-12 mx-6">
@@ -92,7 +92,6 @@
                                 <tr>
                                     <th></th>
                                     <th>Name List </th>
-
                                 </tr>
                             </thead>
 
@@ -148,36 +147,38 @@
                     </div>
                 </div>
                 <!-- ... -->
-                <div class="card w-full bg-base-100 shadow-xl bg-gray-600 text-white">
+                <div class="card w-full bg-neutral shadow-xl bg-gray-600 text-white">
                     <h2 class="text-4xl font-semibold mt-6  text-center bm-4">Budget</h2>
                     <span class="px-4 mt-6">
                         <span class="px-4 text-1xl font-bold">Per Player</span> <input id="input-field"
-                            class="w-36 p-2 text-black font-semibold" type="text">
+                            class="w-40 p-2 text-black font-semibold" type="text">
                     </span>
                     <button id="btn-calculate" class="btn btn-accent mt-8 mx-6 font-bold">Calculate</button>
 
-                    <span class="px-4 mt-6">
-                        <span class="px-4 text-1xl font-bold">Player Expenses </span> <Span
-                            class="px-4 text-1xl font-bold">$<span id="player-expense">00</span></Span>
+                    <span class="px-4 mt-6  text-center">
+                        <span class="px- text-2xl font-bold">Player Expenses </span> <Span
+                            class="px-2 text-1xl font-bold text-2xl font-bold">$<span
+                                id="player-expense text-2xl font-bold">00</span></Span>
 
                     </span>
 
                     <span class="px-4 mt-6">
-                        <span class="px-4 text-1xl font-bold">Manager </span> <input id="manager-field"
-                            class="w-36 p-2 text-black font-semibold" type="text">
+                        <span class="px-2 text-1xl font-bold">Manager </span> <input id="manager-field"
+                            class="w-30 p-2 text-black font-semibold" type="text">
                     </span>
 
                     <span class="px-4 mt-6">
-                        <span class="px-7 text-1xl font-bold">Coach </span> <input id="coach-field"
-                            class="w-36 p-2 text-black font-semibold" type="text">
+                        <span class="px-5 text-1xl font-bold rounded-2xl">Coach </span> <input id="coach-field"
+                            class="w-30 p-2 text-black font-semibold" type="text">
                     </span>
 
                     <button id="btn-total-calculate" class="btn btn-accent mt-6 mx-6 font-bold">Calculate Total</button>
 
                     <span class="px-4 mt-8 text-center">
                         <span class="px-4  text-3xl font-bold">Total </span> <Span
-                            class="px-4 text-2xl font-bold">$<span class="font-bold text-2xl font-bold" id="total-cost">
-                                00</span></Span>
+                            class="px-4 text-2xl font-bold text-amber-400">$<span
+                                class="font-bold text-2xl font-bold text-amber-400" id="total-cost">00</span></Span>
+
                     </span>
                 </div>
                 <div class="card w-full bg-base-100 shadow-xl">
@@ -226,7 +227,7 @@
     </main>
 
 
-    <footer class="footer items-center p-4 bg-neutral text-neutral-content mt-12">
+    <footer class="footer items-center p-8 bg-neutral text-neutral-content mt-12">
         <div class="items-center grid-flow-col w-5/6 mx-auto px-4">
 
             <p class="px-8">Copyright © 2023 - All right reserved</p>
